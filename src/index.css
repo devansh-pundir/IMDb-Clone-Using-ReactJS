@@ -1,0 +1,227 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/* font-family: "Oswald", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+/* font-family: "Poppins", sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  padding: 20px;
+}
+
+body {
+  background-color: #202124;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: auto;
+  width: 100%;
+  padding: 20px 0px;
+  margin-bottom: 25px;
+}
+
+.navbar-logo {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+}
+
+/* CAROUSEL */
+
+.popular-headline {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  background-color: transparent;
+}
+
+.right {
+  right: 0;
+}
+
+.card-container {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+}
+
+.card-item {
+  height: auto;
+  min-width: 230px;
+  max-width: 230px;
+  margin: 25px;
+  border: solid 1px #333;
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  height: auto;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.movie-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.movie-vote-average {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  height: auto;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.sub-headline {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.about-headline {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+}
+
+/* TOP MOVIES */
+
+.top-movies {
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.top-movies-headline {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.top-movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER */
+
+.footer {
+  height: auto;
+  width: 100%;
+  padding: 25px;
+}
+
+.footer-headline {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.mail,
+.portfolio {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  color: beige;
+}
+
+@media only screen and (min-width: 700px) {
+  .hero {
+    padding: 25px 0px 25px calc(100% - 50%);
+  }
+  .hero-content {
+    border-left: solid 1px #333;
+    width: max-content;
+    padding-left: 20px;
+  }
+  .about-headline {
+    width: 300px;
+  }
+  .footer-content {
+    height: auto;
+    border-left: solid 1px #333;
+    width: max-content;
+    padding-left: 20px;
+  }
+}
